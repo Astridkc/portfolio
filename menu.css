@@ -11,13 +11,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #f2f2f2;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-}
-
-.logo img {
-  width: 50px;
-  height: 50px;
+  background-color: #690d00;
 }
 
 nav {
@@ -43,14 +37,16 @@ nav {
 .menu a {
   display: block;
   padding: 10px;
-  color: #333333;
+  color: #d6efff;
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
+  font-size: 20px;
+  font-family: "Anaheim", serif;
 }
 
 .menu a:hover {
-  color: #ff0000;
+  color: #3865ff;
 }
 
 .burger {
@@ -62,7 +58,7 @@ nav {
 .burger .line {
   width: 100%;
   height: 2px;
-  background-color: #333333;
+  background-color: #d6efff;
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
@@ -93,7 +89,7 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: #f2f2f2;
+    background-color: #d6efff;
     position: absolute;
     top: 94px;
     left: 0;
@@ -108,7 +104,9 @@ nav {
 
   nav.active .menu a {
     font-size: 20px;
-    color: #ff0000;
-    font-family: "Joan", serif;
+    color: #690d00;
+    font-family: "Anaheim", serif;
+    text-align: left;
+    padding-left: 20px;
   }
 }
