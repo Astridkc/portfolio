@@ -11,7 +11,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #690d00;
+  background: #f2f2f2;
+}
+
+.astrid_header {
+  background: url(billeder/astrid_baggrund.webp) no-repeat center/cover;
 }
 
 nav {
@@ -37,16 +41,21 @@ nav {
 .menu a {
   display: block;
   padding: 10px;
-  color: #d6efff;
+  color: #690d00;
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
   font-size: 20px;
-  font-family: "Anaheim", serif;
+  font-family: "Stint Ultra Expanded", serif;
 }
 
 .menu a:hover {
   color: #3865ff;
+}
+
+.menu a.active {
+  color: #3865ff;
+  border-bottom: 2px solid #3865ff; /* Streg under den aktive side */
 }
 
 .burger {
@@ -65,6 +74,55 @@ nav {
 .burger {
   display: none;
 }
+
+/************ Dropdown med hjælp fra chat gpt*************/
+/* Dropdown styles */
+.dropdown {
+  display: none; /* Skjuler dropdown som standard */
+  position: absolute;
+  top: 100%; /* Placerer dropdown under "Mine Projekter" */
+  left: 0;
+  background-color: #f2f2f2;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  z-index: 10;
+  min-width: 150px;
+}
+
+.dropdown li {
+  margin: 0;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px 20px;
+  color: #3865ff;
+  text-decoration: none;
+  white-space: nowrap; /* Forhindrer tekst i at bryde */
+}
+
+.dropdown a:hover {
+  background-color: #f0f0f0; /* Giver en baggrundsfarve ved hover */
+  color: blue;
+}
+
+/* Show dropdown on hover */
+/* .menu li:hover .dropdown,
+.menu li:focus-within .dropdown {
+  display: block;
+} */
+.dropdown a:hover {
+  background-color: #f0f0f0;
+  color: blue;
+}
+
+/* Hover-effekt for dropdown */
+.menu li:hover .dropdown {
+  display: block;
+}
+
 @media screen and (max-width: 800px) {
   .menu {
     display: none;

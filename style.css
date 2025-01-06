@@ -48,18 +48,6 @@ main {
 
 /***************index*****************/
 
-#projekter_knap {
-  background-image: url(svg/projekt_knap.svg);
-  aspect-ratio: 296/65;
-  background-size: cover;
-  cursor: pointer;
-  position: absolute;
-  top: 84%;
-  left: 4%;
-  width: 40%;
-
-  display: flex;
-}
 .navn_billede {
   width: 80%;
   margin: 0 auto;
@@ -96,6 +84,81 @@ main {
   }
 }
 
+/***********Mine projekter******************/
+
+.windows_img,
+.hangers_img,
+.sb_img,
+.vaser_img {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.web_container {
+  align-items: center;
+}
+.windows_img:hover {
+  transform: scale(1.1);
+}
+
+.hangers_img:hover {
+  transform: scale(1.1);
+}
+.sb_img:hover {
+  transform: scale(1.1);
+}
+.vaser_img:hover {
+  transform: scale(1.1);
+}
+
+.mine_projekter a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.mine_projekter h2 {
+  text-align: center;
+}
+.mine_projekter h2:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 600px) {
+  .mine_projekter_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+  .windows_img,
+  .hangers_img,
+  .sb_img,
+  .vaser_img {
+    width: 50%;
+    margin: 0%;
+    margin-bottom: 1rem;
+  }
+  .windows_img,
+  .sb_img {
+    margin-left: 20rem;
+  }
+  .hangers_img,
+  .vaser_img {
+    margin-left: 3rem;
+  }
+  .windows_img,
+  .hangers_img {
+    margin-top: 2rem;
+  }
+  .sb_img,
+  .vaser_img {
+    margin-bottom: 3rem;
+  }
+  .mine_projekter h2 {
+    font-size: 30px;
+    margin: auto;
+  }
+}
+
 /****************** web ******************/
 h1 {
   font-family: "Stint Ultra Expanded", serif;
@@ -107,7 +170,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Anaheim", serif;
+  font-family: "Stint Ultra Expanded", serif;
   font-weight: 300;
   color: #292d54;
   font-size: 24px;
@@ -365,6 +428,112 @@ hr {
   }
 }
 
+/*******************Astrid***************/
+
+.astrid_main {
+  background: url(billeder/astrid_baggrund.webp) no-repeat center/cover;
+}
+.mit_navn {
+  margin: 0% auto;
+  width: 90%;
+  padding-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.om_mig p {
+  margin-right: 0.2rem;
+}
+.mig {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border: 5px solid #3865ff;
+}
+
+.uddannelse {
+  background-color: #d6efff;
+  padding-bottom: 2rem;
+}
+.uddannelse h2 {
+  padding-top: 2rem;
+}
+.uddannelse p {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.uddannelse img {
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid #3865ff;
+}
+.skills {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.natur_collage {
+  width: 90%;
+  margin: 0% auto;
+
+  border: 5px solid #3865ff;
+}
+.natur {
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 600px) {
+  .om_mig {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .mig {
+    width: 70%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .mit_navn {
+    margin-top: 7rem;
+    margin-left: 6rem;
+    width: 70%;
+  }
+  .uddannelse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .textilskolen_grid {
+    order: -1;
+  }
+  .textilskolen_grid img {
+    width: 50%;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+  .uddannelse h2 {
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+  }
+  .uddannelse p {
+    line-height: 40px;
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+
+  .skills_tekst {
+    margin-left: 20rem;
+  }
+  .vaerktojskasse_tekst {
+    margin-right: 60rem;
+  }
+  .natur_collage {
+    width: 70%;
+  }
+}
+
 /************ footer *************/
 
 footer {
@@ -411,7 +580,7 @@ footer {
   text-decoration: none;
 
   font-size: 10px;
-  font-family: "Anaheim", serif;
+  font-family: "Stint Ultra Expanded", serif;
   font-weight: 300;
 }
 
@@ -428,7 +597,7 @@ footer {
   text-decoration: none;
   text-align: end;
   font-size: 10px;
-  font-family: "Anaheim", serif;
+  font-family: "Stint Ultra Expanded", serif;
   font-weight: 300;
 }
 
@@ -457,8 +626,11 @@ footer {
     margin-left: 10rem;
   }
 
-  .footer_nav {
+  /* .footer_nav {
     margin-left: 32rem;
+  } */
+  .footer_nav {
+    text-align: left;
   }
 
   .footer_nav a {

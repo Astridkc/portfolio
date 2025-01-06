@@ -29,11 +29,27 @@
     <header>
         <nav>
             <ul class="menu">
-                <li><a href="index.html">index</a></li>
-                <li><a href="mine_projekter.html">mine projekter</a></li>
-                <li><a href="astrid.html">astrid</a></li>
+                <li><a href="index.html">Index</a></li>
+                <li>
+                    <a href="mine_projekter.html" class="active">Mine projekter</a>
+
+                    <ul class="dropdown">
+                        <li><a href="web.html">Grundlæggende web</a></li>
+                        <li><a href="ux_ui.html">Grundlæggende ux/ui</a></li>
+                        <li><a href="animation.html">Grundlæggende animation</a></li>
+                        <li><a href="indhold.html">Grundlæggende indhold</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="astrid.html">Astrid</a></li>
 
             </ul>
+
+
+
+
+
+
             <div class="burger">
                 <div class="line"></div>
                 <div class="line"></div>
@@ -41,14 +57,38 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="mine_projekter_main">
         <h1>Mine Projekter</h1>
         <hr>
-        <div>
-            <div>
+        <div class="mine_projekter">
+            <div class="mine_projekter_grid">
+                <a href="web.html">
+                    <div class="web_container">
+                        <img src="billeder/projekt_computer.webp" alt="projekt web" class="windows_img">
 
+                    </div>
+                </a>
+                <a href="ux_ui.html">
+                    <div class="ux_container">
+                        <img src=" billeder/projekt_hangers.webp" alt="Projekt ux/ui" class="hangers_img">
+
+                    </div>
+                </a>
             </div>
-            <div></div>
+            <div class="mine_projekter_grid">
+                <a href="animation.html">
+                    <div class="ani_container">
+                        <img src="billeder/projekt_sb.webp" alt="Projekt animation" class="sb_img">
+
+                    </div>
+                </a>
+                <a href="indhold.html">
+                    <div class="indhold_container">
+                        <img src="billeder/projekt_vaser.webp" alt="Projekt indhold" class="vaser_img">
+
+                    </div>
+                </a>
+            </div>
         </div>
 
     </main>
