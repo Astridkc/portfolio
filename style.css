@@ -5,24 +5,11 @@ img {
 }
 
 /******* fonts ***********/
-.courier-prime-regular {
-  font-family: "Courier Prime", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.anaheim {
-  font-family: "Anaheim", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
 .raleway {
   font-family: "Raleway", serif;
   font-weight: 400;
   font-style: normal;
 }
-
 .stint-ultra-expanded-regular {
   font-family: "Stint Ultra Expanded", serif;
   font-weight: 400;
@@ -47,7 +34,6 @@ main {
 }
 
 /***************index*****************/
-
 .navn_billede {
   width: 80%;
   margin: 0 auto;
@@ -94,7 +80,6 @@ main {
   margin: 0 auto;
   margin-top: 1rem;
   border-radius: 40px;
-  /* filter: blur(1.5px); */
 }
 .windows_img:hover {
   border: 5px solid #3865ff;
@@ -116,7 +101,6 @@ main {
   width: 60%;
   margin-left: 5.5rem;
   margin-top: 0.5rem;
-
   top: 40%;
   left: 9%;
 }
@@ -148,7 +132,7 @@ main {
     width: 70%;
     margin: 0% auto;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 
   .windows_img,
@@ -170,31 +154,6 @@ main {
     margin-left: 4.7rem;
     margin-top: 0.5rem;
   }
-
-  /* .windows_img,
-  .hangers_img,
-  .sb_img,
-  .vaser_img {
-    width: 50%;
-    margin: 0%;
-    margin-bottom: 1rem;
-  }
-  .windows_img,
-  .sb_img {
-    margin-left: 20rem;
-  }
-  .hangers_img,
-  .vaser_img {
-    margin-left: 3rem;
-  }
-  .windows_img,
-  .hangers_img {
-    margin-top: 2rem;
-  }
-  .sb_img,
-  .vaser_img {
-    margin-bottom: 3rem;
-  } */
 }
 
 /****************** web ******************/
@@ -204,7 +163,6 @@ h1 {
   color: #690d00;
   text-align: center;
   font-size: 32px;
-
   padding: 1rem;
 }
 
@@ -236,13 +194,11 @@ hr {
   width: 90%;
   margin: 0 auto;
 }
-
 .web_proces img {
   width: 80%;
   margin: 0 auto;
   margin-top: 2rem;
 }
-
 .computer_img {
   width: 80%;
   margin: 0 auto;
@@ -263,6 +219,9 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+  }
+  h1 {
+    font-size: 50px;
   }
   p {
     font-size: 16px;
@@ -290,7 +249,7 @@ hr {
   .farvekoder_img {
     order: -1;
   }
-  .web_læring {
+  .web_laering {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -303,26 +262,30 @@ hr {
     width: 30%;
     margin-left: 5.5rem;
   }
-  .web_læring p {
+  .web_laering p {
     margin: 0%;
     margin-left: 6rem;
   }
 }
 
-/*************** indhold *****************/
+/*************** ux/ui *****************/
 
 .wear_aware img {
   width: 40%;
   margin-top: 2rem;
   margin: 0 auto;
 }
-
 .proto_forside {
   width: 70%;
   margin-top: 2rem;
   margin: 0 auto;
+  margin-left: 3rem;
 }
-
+.proto_gronnere {
+  width: 70%;
+  margin: 0 auto;
+  margin-right: 3rem;
+}
 .proces_billeder {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -365,12 +328,16 @@ hr {
   }
   .proto_forside {
     margin: 0%;
-    margin-left: 10rem;
+    margin-left: 15rem;
+  }
+  .proto_gronnere {
+    margin: 0%;
+    margin-left: 4rem;
   }
   .proces_billeder {
     order: -1;
   }
-  .læring_wa {
+  .laering_wa {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -380,7 +347,7 @@ hr {
     margin-top: 4rem;
     margin-bottom: 2rem;
   }
-  .læring_wa p {
+  .laering_wa p {
     margin: 0%;
     margin-left: 6rem;
   }
@@ -575,7 +542,6 @@ hr {
   padding-top: 2rem;
   margin-bottom: 1.5rem;
 }
-
 .om_mig p {
   margin-right: 0.2rem;
 }
@@ -586,7 +552,6 @@ hr {
   margin-bottom: 2rem;
   border: 5px solid #3865ff;
 }
-
 .uddannelse {
   background-color: #d6efff;
   padding-bottom: 2rem;
@@ -597,6 +562,7 @@ hr {
 .uddannelse p {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
+  font-family: "Stint Ultra Expanded", serif;
 }
 .uddannelse img {
   width: 80%;
@@ -620,10 +586,12 @@ hr {
 .skills_grid p {
   margin-bottom: 1rem;
   text-align: center;
+  font-family: "Stint Ultra Expanded", serif;
 }
 .skills2_grid p {
   margin-bottom: 1rem;
   text-align: center;
+  font-family: "Stint Ultra Expanded", serif;
 }
 
 @media (min-width: 600px) {
@@ -691,7 +659,6 @@ hr {
 }
 
 /************ footer *************/
-
 footer {
   position: relative;
   background-color: #690d00;
@@ -730,14 +697,12 @@ footer {
 .footer_nav_1 a:hover {
   color: #3865ff;
 }
-
 .footer_nav_2 a:hover {
   color: #3865ff;
 }
 .footer_nav_1 li {
   margin-bottom: 10px;
 }
-
 @media (min-width: 600px) {
   .tekst_multi_footer {
     font-size: 40px;

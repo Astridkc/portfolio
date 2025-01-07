@@ -111,11 +111,6 @@ nav {
   color: blue;
 }
 
-/* Show dropdown on hover */
-/* .menu li:hover .dropdown,
-.menu li:focus-within .dropdown {
-  display: block;
-} */
 .dropdown a:hover {
   background-color: #f0f0f0;
   color: blue;
