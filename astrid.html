@@ -30,9 +30,19 @@
     <header class="astrid_header">
         <nav>
             <ul class="menu">
-                <li><a href="index.html">index</a></li>
-                <li><a href="mine_projekter.html">mine projekter</a></li>
-                <li><a href="astrid.html" class="active">astrid</a></li>
+                <li><a href="index.html">Index</a></li>
+                <li>
+                    <a href="mine_projekter.html">Mine projekter</a>
+
+                    <ul class="dropdown">
+                        <li><a href="web.html">Grundlæggende web</a></li>
+                        <li><a href="ux_ui.html">Grundlæggende ux/ui</a></li>
+                        <li><a href="animation.html">Grundlæggende animation</a></li>
+                        <li><a href="indhold.html">Grundlæggende indhold</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="astrid.html" class="active">Astrid</a></li>
 
             </ul>
             <div class="burger">
@@ -79,30 +89,71 @@
             </div>
         </div>
 
-        <div class="skills">
-            <div class="skills_tekst">
-                <h2>Skills</h2>
-                <p>- Udvikling af webdesign <br><br>
-
-                    - Grafisk design <br><br>
-                    - Kodning af website <br><br>
-                    - Fotografering & billederedigering
-                </p>
+        <h2 class="skills">Skills</h2>
+        <div>
+            <div class="skills_grid">
+                <div>
+                    <p>Grafisk Design</p>
+                </div>
+                <div>
+                    <p>Kodning af website</p>
+                </div>
+                <div>
+                    <p>Udvikling af webdesign</p>
+                </div>
+                <div>
+                    <p>Fotografering & Billederedigering</p>
+                </div>
             </div>
-            <div class="vaerktojskasse_tekst">
-                <h2>Værktøjskasse</h2>
-                <p>
-                    - VScode (html, css, javascript)<br><br>
-                    - Figma <br><br>
-                    - Adobe pakken
-                </p>
+            <h2 class="skills">Værktøjskasse</h2>
+            <div class="skills2_grid">
+                <div>
+                    <p>VScode (html, css, javascript)</p>
+                </div>
+                <div>
+                    <p>Figma</p>
+                </div>
+                <div>
+                    <p>Adobe pakken</p>
+                </div>
             </div>
         </div>
+
+
+
         <div class="natur">
             <img src="billeder/natur_collage.webp" alt="collage" class="natur_collage">
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer_grid">
+            <div class="h1_footer">
+                <h1 class="tekst_multi_footer">MULTIMEDIEDESIGN/ <br> 1. semester</h1>
+
+            </div>
+
+            <div class="navigation">
+                <ul class="footer_nav_1">
+
+                    <li><a href="index.html" class="index_footer">Index /</a></li>
+                    <li><a href="web.html" class="web_footer">Web /</a></li>
+                    <li><a href="ux_ui.html" class="ux_footer">UX/UI /</a></li>
+
+
+
+                    <li><a href="animation.html" class="ani_footer">Animation /</a></li>
+                    <li><a href="indhold.html" class="indhold_footer">Indhold /</a></li>
+                    <li><a href="astrid.html" class="astrid_footer">Astrid /</a></li>
+
+                </ul>
+            </div>
+            <div>
+                <h2 class="tekst_navn_footer"> Designet og udviklet af Astrid k. Christensen, <br>
+                    Multimediedesigner</h2>
+            </div>
+
+        </div>
+    </footer>
     <script src="menu.js" defer></script>
 
 

@@ -90,41 +90,50 @@ main {
 .hangers_img,
 .sb_img,
 .vaser_img {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   margin-top: 1rem;
+  border-radius: 40px;
+  /* filter: blur(1.5px); */
 }
-
-.web_container,
-.ani_container,
-.ux_container,
-.indhold_container {
-  position: relative;
+.windows_img:hover {
+  border: 5px solid #3865ff;
+}
+.hangers_img:hover {
+  border: 5px solid #3865ff;
+}
+.sb_img:hover {
+  border: 5px solid #3865ff;
+}
+.vaser_img:hover {
+  border: 5px solid #3865ff;
 }
 
 .ux_ui_knap,
 .ani_knap,
 .web_knap,
 .indhold_knap {
-  width: 55%;
-  margin-left: 4rem;
+  width: 60%;
+  margin-left: 5.5rem;
   margin-top: 0.5rem;
-  position: absolute;
+
   top: 40%;
   left: 9%;
 }
-
-.windows_img:hover {
-  transform: scale(1.1);
+.indhold_knap {
+  padding-bottom: 2rem;
 }
 
-.hangers_img:hover {
+.indhold_knap:hover {
   transform: scale(1.1);
 }
-.sb_img:hover {
+.web_knap:hover {
   transform: scale(1.1);
 }
-.vaser_img:hover {
+.ani_knap:hover {
+  transform: scale(1.1);
+}
+.ux_ui_knap:hover {
   transform: scale(1.1);
 }
 
@@ -141,10 +150,7 @@ main {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  .windows_img,
-  .hangers_img {
-    margin-bottom: 1rem;
-  }
+
   .windows_img,
   .sb_img {
     margin-left: 8rem;
@@ -152,6 +158,17 @@ main {
   .vaser_img,
   .hangers_img {
     margin-right: 8rem;
+  }
+
+  .ani_knap,
+  .web_knap {
+    margin-left: 8rem;
+  }
+  .ux_ui_knap,
+  .indhold_knap {
+    margin: 0%;
+    margin-left: 4.7rem;
+    margin-top: 0.5rem;
   }
 
   /* .windows_img,
@@ -187,7 +204,8 @@ h1 {
   color: #690d00;
   text-align: center;
   font-size: 32px;
-  padding-top: 1rem;
+
+  padding: 1rem;
 }
 
 h2 {
@@ -204,8 +222,10 @@ p {
   font-family: "Raleway", serif;
   font-weight: 400;
   margin-left: 1rem;
+  margin-right: 1rem;
   line-height: 20px;
   color: #292d54;
+  margin-bottom: 1rem;
 }
 hr {
   color: #292d54;
@@ -228,6 +248,14 @@ hr {
   margin: 0 auto;
   margin-top: 2rem;
   padding-bottom: 2rem;
+}
+.web_site {
+  width: 40%;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+.web_site:hover {
+  transform: scale(1.1);
 }
 
 @media (min-width: 600px) {
@@ -269,21 +297,30 @@ hr {
   }
   .computer_img {
     width: 60%;
+    margin-bottom: 2rem;
+  }
+  .web_site {
+    width: 30%;
+    margin-left: 5.5rem;
+  }
+  .web_læring p {
+    margin: 0%;
+    margin-left: 6rem;
   }
 }
 
 /*************** indhold *****************/
 
 .wear_aware img {
-  width: 60%;
+  width: 40%;
   margin-top: 2rem;
   margin: 0 auto;
 }
 
-.proces_wa img {
+.proto_forside {
   width: 70%;
   margin-top: 2rem;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 .proces_billeder {
@@ -297,6 +334,15 @@ hr {
   margin: 0 auto;
   margin-bottom: 2rem;
 }
+.ux_ui_site {
+  width: 40%;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+.ux_ui_site:hover {
+  transform: scale(1.1);
+}
 
 @media (min-width: 600px) {
   .wear_aware {
@@ -305,8 +351,8 @@ hr {
     gap: 10px;
   }
   .wear_aware img {
-    width: 50%;
-    margin-top: 5rem;
+    width: 40%;
+    margin-top: 7rem;
   }
   .proces_wa {
     display: grid;
@@ -314,9 +360,11 @@ hr {
     gap: 10px;
   }
   .proces_wa img {
-    width: 50%;
+    width: 40%;
+    margin-top: 2rem;
   }
   .proto_forside {
+    margin: 0%;
     margin-left: 10rem;
   }
   .proces_billeder {
@@ -330,6 +378,16 @@ hr {
   .wa_moodboard {
     width: 80%;
     margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+  .læring_wa p {
+    margin: 0%;
+    margin-left: 6rem;
+  }
+  .ux_ui_site {
+    width: 30%;
+    margin-left: 5.5rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -343,11 +401,21 @@ hr {
   width: 90%;
   margin: 0 auto;
 }
-.animation_laering img {
+.java_kode {
   width: 95%;
   margin: 0 auto;
   margin-bottom: 2rem;
 }
+.ani_website_knap {
+  width: 40%;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+.ani_website_knap:hover {
+  transform: scale(1.1);
+}
+
 @media (min-width: 600px) {
   .animation_tema {
     display: grid;
@@ -378,9 +446,18 @@ hr {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
-  .animation_laering img {
+  .java_kode {
     margin-top: 7rem;
     width: 80%;
+  }
+  .animation_laering p {
+    margin: 0%;
+    margin-left: 6rem;
+  }
+  .ani_website_knap {
+    width: 30%;
+    margin-left: 5.5rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -390,11 +467,11 @@ hr {
   width: 95%;
   margin: 0 auto;
 }
-.passion img {
+.sara img {
   width: 90%;
   margin: 0 auto;
 }
-.virksomhedssite img {
+.butik_img {
   width: 90%;
   margin: 0 auto;
 }
@@ -402,6 +479,24 @@ hr {
   width: 50%;
   margin-left: 2rem;
   padding-bottom: 2rem;
+}
+.passion_site_knap {
+  width: 40%;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+.passion_site_knap:hover {
+  transform: scale(1.1);
+}
+.virksomhedssite_knap {
+  width: 40%;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+.virksomhedssite_knap:hover {
+  transform: scale(1.1);
 }
 @media (min-width: 600px) {
   .indhold_tema {
@@ -435,7 +530,7 @@ hr {
     width: 60%;
     margin-top: 2rem;
   }
-  .virksomhedssite img {
+  .butik_img {
     width: 70%;
     margin-top: 3.2rem;
   }
@@ -446,6 +541,26 @@ hr {
   .illustration {
     order: -1;
     margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .virksomhedssite_knap {
+    width: 30%;
+    margin-left: 5.5rem;
+    margin-bottom: 4rem;
+  }
+  .passion_site_knap {
+    width: 30%;
+    margin-left: 5.5rem;
+    margin-bottom: 4rem;
+  }
+  .passion p {
+    margin: 0%;
+    margin-left: 6rem;
+    margin-right: 4rem;
+  }
+  .virksomhedssite p {
+    margin: 0%;
+    margin-left: 6rem;
   }
 }
 
@@ -489,8 +604,9 @@ hr {
   border: 5px solid #3865ff;
 }
 .skills {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   margin-top: 2rem;
+  text-align: center;
 }
 .natur_collage {
   width: 90%;
@@ -501,6 +617,14 @@ hr {
 .natur {
   padding-bottom: 2rem;
 }
+.skills_grid p {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.skills2_grid p {
+  margin-bottom: 1rem;
+  text-align: center;
+}
 
 @media (min-width: 600px) {
   .om_mig {
@@ -509,8 +633,8 @@ hr {
     gap: 10px;
   }
   .mig {
-    width: 70%;
-    margin-top: 5rem;
+    width: 50%;
+    margin-top: 8rem;
     margin-bottom: 5rem;
   }
   .mit_navn {
@@ -538,131 +662,95 @@ hr {
   .uddannelse p {
     line-height: 40px;
   }
-  .skills {
+
+  .skills_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .skills {
+    text-align: center;
+    margin: 0%;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
   }
 
-  .skills_tekst {
-    margin-left: 20rem;
+  .skills2_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
   }
-  .vaerktojskasse_tekst {
-    margin-right: 60rem;
+  .skills2_grid p {
+    text-align: center;
+    margin-bottom: 4rem;
   }
   .natur_collage {
     width: 70%;
+    margin-bottom: 2rem;
   }
 }
 
 /************ footer *************/
 
 footer {
+  position: relative;
   background-color: #690d00;
-  padding: 20px;
+  padding: 2px;
+  height: 250px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  position: relative;
 }
-
-.footer_grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
 .tekst_multi_footer {
-  font-size: 17px;
+  position: absolute;
+  top: 5px;
+  left: 1px;
   color: #d6efff;
   font-family: "Stint Ultra Expanded", serif;
-  font-weight: 200;
-  margin-top: 12.3rem;
+  text-align: left;
+  font-size: 15px;
 }
-
+.navigation a {
+  position: absolute;
+  right: 2px;
+  padding-top: 1rem;
+  padding-right: 0.5rem;
+  text-decoration: none;
+  color: #d6efff;
+  font-family: "Stint Ultra Expanded", serif;
+  font-size: 12px;
+}
 .tekst_navn_footer {
-  margin-top: 10.3rem;
-  font-size: 10px;
-  margin-left: 4rem;
+  position: absolute;
+  left: 1px;
+  bottom: 5px;
   color: #d6efff;
-  font-family: "Stint Ultra Expanded", serif;
-  font-weight: 200;
-  display: flex;
-}
-
-.h1_footer {
-  border-right: 1px solid #d6efff;
-}
-
-.footer_nav a {
-  display: block;
-  padding: 2px;
-  color: #d6efff;
-  text-decoration: none;
-
+  text-align: left;
   font-size: 10px;
-  font-family: "Stint Ultra Expanded", serif;
-  font-weight: 300;
 }
-
-.footer_nav {
-  list-style: none;
-  display: flex;
-  margin-left: 6.6rem;
-}
-
-.footer_nav_2 a {
-  display: block;
-  padding: 2px;
-  color: #d6efff;
-  text-decoration: none;
-  text-align: end;
-  font-size: 10px;
-  font-family: "Stint Ultra Expanded", serif;
-  font-weight: 300;
-}
-
-.footer_nav_2 {
-  list-style: none;
-  display: flex;
-  margin-left: 4.4rem;
-}
-
-.footer_nav a:hover {
+.footer_nav_1 a:hover {
   color: #3865ff;
 }
 
 .footer_nav_2 a:hover {
   color: #3865ff;
 }
+.footer_nav_1 li {
+  margin-bottom: 10px;
+}
 
 @media (min-width: 600px) {
   .tekst_multi_footer {
-    font-size: 60px;
-    margin-top: 19rem;
+    font-size: 40px;
   }
   .tekst_navn_footer {
+    margin: 0%;
+    bottom: 10px;
     font-size: 20px;
-    margin-top: 21rem;
-    margin-left: 10rem;
+    left: 15px;
   }
-
-  /* .footer_nav {
-    margin-left: 32rem;
-  } */
-  .footer_nav {
-    text-align: left;
-  }
-
-  .footer_nav a {
-    font-size: 20px;
-  }
-
-  .footer_nav_2 a {
-    font-size: 20px;
-  }
-
-  .footer_nav_2 {
-    margin-left: 27rem;
+  .navigation a {
+    right: 20px;
+    font-size: 15px;
+    margin-top: 1rem;
   }
 }
